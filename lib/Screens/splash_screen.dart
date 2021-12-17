@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ecommerce_app/Screens/customer_store_screen.dart';
 import 'package:ecommerce_app/Screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const LoginScreen(),
+          builder: (context) => const CustomerStore(),
         ),
       ),
     );
