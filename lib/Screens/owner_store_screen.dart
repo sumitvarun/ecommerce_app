@@ -40,6 +40,7 @@ class _StoreOwnerState extends State<StoreOwner> {
             ),
           ],
         ),
+        body: Column(),
       ),
     );
   }
