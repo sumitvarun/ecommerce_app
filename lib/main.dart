@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/Screens/login_screen.dart';
+import 'package:ecommerce_app/Screens/owner_store_screen.dart';
 import 'package:ecommerce_app/Screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const StoreOwner(),
     );
   }
 }
