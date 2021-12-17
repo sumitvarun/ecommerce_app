@@ -20,7 +20,7 @@ class _CustomerStoreState extends State<CustomerStore> {
             color: Colors.black,
             child: const Center(
               child: Text(
-                'Start Creating Your Store',
+                'Explore Stores & Product Around You',
               ),
             ),
           ),
