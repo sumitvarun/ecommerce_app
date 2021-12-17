@@ -12,6 +12,16 @@ class _CustomerStoreState extends State<CustomerStore> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          actions: [],
+          elevation: 15,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(100),
+              bottomRight: Radius.circular(100),
+            ),
+          ),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.blueGrey[700],
           type: BottomNavigationBarType.fixed,

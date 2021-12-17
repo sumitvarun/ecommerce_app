@@ -12,6 +12,27 @@ class _StoreOwnerState extends State<StoreOwner> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blueGrey,
+          shadowColor: Colors.cyanAccent,
+          foregroundColor: Colors.black,
+          title: Title(
+            color: Colors.black,
+            child: const Center(
+              child: Text(
+                'Start Creating Your Store',
+              ),
+            ),
+          ),
+          actions: [],
+          elevation: 20,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(100),
+              bottomRight: Radius.circular(100),
+            ),
+          ),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.blueGrey[700],
           type: BottomNavigationBarType.fixed,
