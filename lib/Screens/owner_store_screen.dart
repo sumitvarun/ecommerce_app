@@ -13,9 +13,9 @@ class _StoreOwnerState extends State<StoreOwner> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
-          shadowColor: Colors.cyanAccent,
-          foregroundColor: Colors.black,
+          backgroundColor: Colors.pink,
+          shadowColor: Colors.pink[900],
+          foregroundColor: Colors.grey[350],
           title: Title(
             color: Colors.black,
             child: const Center(

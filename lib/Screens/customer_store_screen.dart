@@ -13,8 +13,19 @@ class _CustomerStoreState extends State<CustomerStore> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.pink,
+          shadowColor: Colors.pink[900],
+          foregroundColor: Colors.grey[350],
+          title: Title(
+            color: Colors.black,
+            child: const Center(
+              child: Text(
+                'Start Creating Your Store',
+              ),
+            ),
+          ),
           actions: [],
-          elevation: 15,
+          elevation: 20,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(100),
