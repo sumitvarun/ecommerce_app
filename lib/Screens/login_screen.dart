@@ -23,9 +23,16 @@ class _LoginScreenState extends State<LoginScreen> {
           length: 2,
           child: Scaffold(
             appBar: AppBar(
-              title: const Text('Welcome Again'),
+              title: const Text(
+                'Welcome Again',
+                style: TextStyle(
+                  fontWeight: FontWeight.normal,
+                  fontSize: 25,
+                ),
+              ),
               automaticallyImplyLeading: false,
               backgroundColor: const Color(0xffEC407A),
+              foregroundColor: Colors.black,
               bottom: const TabBar(
                 indicatorColor: Colors.white,
                 tabs: [
