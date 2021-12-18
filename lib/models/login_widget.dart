@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/Screens/customer_store_screen.dart';
 import 'package:flutter/material.dart';
 
 class loginContainer extends StatelessWidget {
@@ -78,7 +79,13 @@ class loginContainer extends StatelessWidget {
                   foregroundColor:
                       MaterialStateProperty.all<Color>(Colors.white),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const CustomerStore()),
+                  );
+                },
                 icon: const Icon(Icons.arrow_forward),
                 label: const Text("Login"),
               ),

@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
             appBar: AppBar(
               title: const Text('Welcome Again'),
               automaticallyImplyLeading: false,
-              backgroundColor: const Color(0xffFC033C),
+              backgroundColor: const Color(0xffEC407A),
               bottom: const TabBar(
                 indicatorColor: Colors.white,
                 tabs: [

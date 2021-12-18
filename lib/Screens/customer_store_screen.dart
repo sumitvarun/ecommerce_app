@@ -16,6 +16,9 @@ class _CustomerStoreState extends State<CustomerStore> {
           backgroundColor: Colors.pink,
           shadowColor: Colors.pink[900],
           foregroundColor: Colors.grey[350],
+          leading: IconButton(
+              icon: const Icon(Icons.arrow_back),
+              onPressed: () => Navigator.of(context).pop()),
           title: Title(
             color: Colors.black,
             child: const Center(
