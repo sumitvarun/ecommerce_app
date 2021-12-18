@@ -18,11 +18,12 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: MaterialApp(
+        theme: ThemeData(fontFamily: 'MavenPro'),
         home: DefaultTabController(
           length: 2,
           child: Scaffold(
             appBar: AppBar(
-              title: const Text('MyStore'),
+              title: const Text('Welcome Again'),
               automaticallyImplyLeading: false,
               backgroundColor: const Color(0xffFC033C),
               bottom: const TabBar(
