@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 tabs: [
                   Tab(text: 'Customer', icon: Icon(Icons.person)),
                   Tab(text: 'Store', icon: Icon(Icons.storefront_outlined)),
-                  //Tab(text: 'BIRDS', icon: Icon(Icons.search)),
+                  //Tab(text: 'SUMITVARUN', icon: Icon(Icons.search)),
                 ],
               ),
             ),
