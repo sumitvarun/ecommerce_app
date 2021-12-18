@@ -33,15 +33,16 @@ class loginContainer extends StatelessWidget {
             ),
             TextFormField(
               decoration: const InputDecoration(
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8)),
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
-                      borderSide: BorderSide(color: Colors.grey)),
+                  //enabledBorder: OutlineInputBorder(
+                  //   borderRadius: BorderRadius.all(Radius.circular(8)),
+                  //  borderSide: BorderSide(color: Colors.grey),
+                  //  ),
+                  // focusedBorder: OutlineInputBorder(
+                  //      borderRadius: BorderRadius.all(Radius.circular(8)),
+                  //     borderSide: BorderSide(color: Colors.grey)),
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.white,
+                  labelText: 'Your mobile number with country code',
                   hintText: 'Phone Number'),
               controller: _phoneController,
             ),
@@ -50,14 +51,15 @@ class loginContainer extends StatelessWidget {
             ),
             TextFormField(
               decoration: const InputDecoration(
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
-                      borderSide: BorderSide(color: Colors.grey)),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
-                      borderSide: BorderSide(color: Colors.grey)),
+                  // enabledBorder: OutlineInputBorder(
+                  //    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  //     borderSide: BorderSide(color: Colors.grey)),
+                  //  focusedBorder: OutlineInputBorder(
+                  //      borderRadius: BorderRadius.all(Radius.circular(8)),
+                  //      borderSide: BorderSide(color: Colors.grey)),
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.white,
+                  labelText: 'Make your password',
                   hintText: 'Password'),
               controller: _passController,
             ),
