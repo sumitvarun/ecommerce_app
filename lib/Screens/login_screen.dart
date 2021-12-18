@@ -24,12 +24,12 @@ class _LoginScreenState extends State<LoginScreen> {
             appBar: AppBar(
               title: const Text('MyStore'),
               automaticallyImplyLeading: false,
-              backgroundColor: const Color(0xff5808e5),
+              backgroundColor: const Color(0xffFC033C),
               bottom: const TabBar(
                 indicatorColor: Colors.white,
                 tabs: [
-                  Tab(text: 'Customer', icon: Icon(Icons.favorite)),
-                  Tab(text: 'Store', icon: Icon(Icons.music_note)),
+                  Tab(text: 'Customer', icon: Icon(Icons.person)),
+                  Tab(text: 'Store', icon: Icon(Icons.storefront_outlined)),
                   //Tab(text: 'BIRDS', icon: Icon(Icons.search)),
                 ],
               ),
