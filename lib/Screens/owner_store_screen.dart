@@ -41,19 +41,122 @@ class _StoreOwnerState extends State<StoreOwner> {
           // horizontal, this produces 2 rows.
           crossAxisCount: 2,
           // Generate 100 widgets that display their index in the List.
-          children: const <Widget>[
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
-            ProductCard(),
+          children: <Widget>[
+            // ProductCard(),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: <Widget>[
+                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  ListTile(
+                    //leading: const Icon(Icons.arrow_drop_down_circle),
+                    title: const Text(
+                      'Fresh Fruits & Vegetables',
+                      textAlign: TextAlign.center,
+                    ),
+                    subtitle: Text(
+                      '',
+                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: <Widget>[
+                  Image.asset('lib/assets/images/HEALTHY-COOKING-OILS.jpg'),
+                  ListTile(
+                    //leading: const Icon(Icons.arrow_drop_down_circle),
+                    title: const Text(
+                      'Cooking Oil & Ghee',
+                      textAlign: TextAlign.center,
+                    ),
+                    subtitle: Text(
+                      '',
+                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: <Widget>[
+                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  ListTile(
+                    //leading: const Icon(Icons.arrow_drop_down_circle),
+                    title: const Text(
+                      'Meat & Fish',
+                      textAlign: TextAlign.center,
+                    ),
+                    subtitle: Text(
+                      '',
+                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: <Widget>[
+                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  ListTile(
+                    //leading: const Icon(Icons.arrow_drop_down_circle),
+                    title: const Text(
+                      'Bakery & Snacks',
+                      textAlign: TextAlign.center,
+                    ),
+                    subtitle: Text(
+                      '',
+                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: <Widget>[
+                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  ListTile(
+                    //leading: const Icon(Icons.arrow_drop_down_circle),
+                    title: const Text(
+                      'Dairy',
+                      textAlign: TextAlign.center,
+                    ),
+                    subtitle: Text(
+                      '',
+                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: <Widget>[
+                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  ListTile(
+                    //leading: const Icon(Icons.arrow_drop_down_circle),
+                    title: const Text(
+                      'Beverages',
+                      textAlign: TextAlign.center,
+                    ),
+                    subtitle: Text(
+                      '',
+                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
