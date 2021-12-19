@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/models/bottomnavigationbar.dart';
+import 'package:ecommerce_app/models/product_card.dart';
 import 'package:flutter/material.dart';
 
 class StoreOwner extends StatefulWidget {
@@ -36,28 +37,17 @@ class _StoreOwnerState extends State<StoreOwner> {
         ),
         bottomNavigationBar: const BottomNavBar(),
         body: GridView.count(
-            // Create a grid with 2 columns. If you change the scrollDirection to
-            // horizontal, this produces 2 rows.
-            crossAxisCount: 2,
-            // Generate 100 widgets that display their index in the List.
-            children: <Widget>[
-              Card(
-                clipBehavior: Clip.antiAlias,
-                child: Column(
-                  children: <Widget>[
-                    Image.asset('lib/assets/images/fruits&vegetables.jpg'),
-                    ListTile(
-                      //leading: const Icon(Icons.arrow_drop_down_circle),
-                      title: const Text('Card title 1'),
-                      subtitle: Text(
-                        'Secondary Text',
-                        style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ]),
+          // Create a grid with 2 columns. If you change the scrollDirection to
+          // horizontal, this produces 2 rows.
+          crossAxisCount: 2,
+          // Generate 100 widgets that display their index in the List.
+          children: const <Widget>[
+            ProductCard(),
+            ProductCard(),
+            ProductCard(),
+            ProductCard(),
+          ],
+        ),
       ),
     );
   }
