@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/Screens/customer_store_screen.dart';
+import 'package:ecommerce_app/Screens/owner_store_screen.dart';
 import 'package:flutter/material.dart';
 
 class loginContainer extends StatelessWidget {
@@ -82,8 +83,7 @@ class loginContainer extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => const CustomerStore()),
+                    MaterialPageRoute(builder: (context) => const StoreOwner()),
                   );
                 },
                 icon: const Icon(Icons.arrow_forward),

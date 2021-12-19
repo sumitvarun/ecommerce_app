@@ -21,10 +21,10 @@ class BottomNavBar extends StatelessWidget {
           label: 'Orders',
           icon: Icon(Icons.shopping_basket_rounded),
         ),
-        // BottomNavigationBarItem(
-        //   label: 'Category',
-        // icon: Icon(Icons.add),
-        // ),
+        BottomNavigationBarItem(
+          label: 'Category',
+          icon: Icon(Icons.add),
+        ),
         BottomNavigationBarItem(
           label: 'Marketing',
           icon: Icon(Icons.store_outlined),
