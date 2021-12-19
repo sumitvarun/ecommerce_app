@@ -64,6 +64,11 @@ flutter:
     - lib/assets/images/MyStore-logos (3)/MyStore-logos.jpeg
     - lib/assets/images/fruits&vegetables.jpg
     - lib/assets/images/HEALTHY-COOKING-OILS.jpg
+    - lib/assets/images/bakery.jpg
+    - lib/assets/images/bakery1.jpg
+    - lib/assets/images/beverages.jpg
+    - lib/assets/images/dairy.jpeg
+    - lib/assets/images/meatfishegg.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

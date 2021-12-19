@@ -85,7 +85,7 @@ class _StoreOwnerState extends State<StoreOwner> {
               clipBehavior: Clip.antiAlias,
               child: Column(
                 children: <Widget>[
-                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  Image.asset('lib/assets/images/meatfishegg.jpg'),
                   ListTile(
                     //leading: const Icon(Icons.arrow_drop_down_circle),
                     title: const Text(
@@ -104,7 +104,7 @@ class _StoreOwnerState extends State<StoreOwner> {
               clipBehavior: Clip.antiAlias,
               child: Column(
                 children: <Widget>[
-                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  Image.asset('lib/assets/images/bakery.jpg'),
                   ListTile(
                     //leading: const Icon(Icons.arrow_drop_down_circle),
                     title: const Text(
@@ -123,7 +123,7 @@ class _StoreOwnerState extends State<StoreOwner> {
               clipBehavior: Clip.antiAlias,
               child: Column(
                 children: <Widget>[
-                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  Image.asset('lib/assets/images/dairy.jpeg'),
                   ListTile(
                     //leading: const Icon(Icons.arrow_drop_down_circle),
                     title: const Text(
@@ -142,7 +142,7 @@ class _StoreOwnerState extends State<StoreOwner> {
               clipBehavior: Clip.antiAlias,
               child: Column(
                 children: <Widget>[
-                  Image.asset('lib/assets/images/fruits&vegetables.jpg'),
+                  Image.asset('lib/assets/images/beverages.jpg'),
                   ListTile(
                     //leading: const Icon(Icons.arrow_drop_down_circle),
                     title: const Text(
