@@ -159,6 +159,12 @@ class _StoreOwnerState extends State<StoreOwner> {
             ),
           ],
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: const Color(0xfff17532),
+          child: const Icon(Icons.store),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
