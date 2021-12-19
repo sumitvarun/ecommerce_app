@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/models/bottomnavigationbar.dart';
 import 'package:flutter/material.dart';
 
 class StoreOwner extends StatefulWidget {
@@ -33,34 +34,7 @@ class _StoreOwnerState extends State<StoreOwner> {
             ),
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.blueGrey[700],
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.pinkAccent[400],
-          unselectedItemColor: Colors.grey[300],
-          items: const [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home),
-            ),
-            BottomNavigationBarItem(
-              label: 'Orders',
-              icon: Icon(Icons.shopping_basket_rounded),
-            ),
-            BottomNavigationBarItem(
-              label: 'Category',
-              icon: Icon(Icons.add),
-            ),
-            BottomNavigationBarItem(
-              label: 'Marketing',
-              icon: Icon(Icons.store_outlined),
-            ),
-            BottomNavigationBarItem(
-              label: 'Profile',
-              icon: Icon(Icons.person),
-            ),
-          ],
-        ),
+        bottomNavigationBar: BottomNavBar(),
         body: GridView.count(
           // Create a grid with 2 columns. If you change the scrollDirection to
           // horizontal, this produces 2 rows.
