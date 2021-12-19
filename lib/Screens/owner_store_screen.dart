@@ -47,7 +47,7 @@ class _StoreOwnerState extends State<StoreOwner> {
                   children: <Widget>[
                     Image.asset('lib/assets/images/fruits&vegetables.jpg'),
                     ListTile(
-                      leading: const Icon(Icons.arrow_drop_down_circle),
+                      //leading: const Icon(Icons.arrow_drop_down_circle),
                       title: const Text('Card title 1'),
                       subtitle: Text(
                         'Secondary Text',
@@ -56,7 +56,7 @@ class _StoreOwnerState extends State<StoreOwner> {
                     ),
                   ],
                 ),
-              )
+              ),
             ]),
       ),
     );
