@@ -12,31 +12,31 @@ class StoreOwner extends StatefulWidget {
 class _StoreOwnerState extends State<StoreOwner> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.pink,
-          shadowColor: Colors.pink[900],
-          foregroundColor: Colors.grey[350],
-          title: Title(
-            color: Colors.black,
-            child: const Center(
-              child: Text(
-                'Start Creating Your Store',
-              ),
-            ),
-          ),
-          actions: [],
-          elevation: 20,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(100),
-              bottomRight: Radius.circular(100),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.pink,
+        shadowColor: Colors.pink[900],
+        foregroundColor: Colors.grey[350],
+        title: Title(
+          color: Colors.black,
+          child: const Center(
+            child: Text(
+              'Start Creating Your Store',
             ),
           ),
         ),
-        bottomNavigationBar: const BottomNavBar(),
-        body: GridView.count(
+        actions: [],
+        elevation: 20,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(100),
+            bottomRight: Radius.circular(100),
+          ),
+        ),
+      ),
+      bottomNavigationBar: const BottomNavBar(),
+      body: SafeArea(
+        child: GridView.count(
           // Create a grid with 2 columns. If you change the scrollDirection to
           // horizontal, this produces 2 rows.
           crossAxisCount: 2,
@@ -159,14 +159,14 @@ class _StoreOwnerState extends State<StoreOwner> {
             ),
           ],
         ),
-        floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {},
-          label: const Text("Create"),
-          icon: const Icon(Icons.store),
-          backgroundColor: const Color(0xfff17532),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        label: const Text("Create"),
+        icon: const Icon(Icons.store),
+        backgroundColor: const Color(0xfff17532),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
