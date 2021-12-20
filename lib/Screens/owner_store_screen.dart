@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/Screens/customer_store_screen.dart';
 import 'package:flutter/material.dart';
 
 class StoreOwner extends StatefulWidget {
@@ -52,10 +53,10 @@ class _StoreOwnerState extends State<StoreOwner> {
               label: 'Category',
               icon: Icon(Icons.add),
               backgroundColor: Colors.orange),
-          BottomNavigationBarItem(
-              label: 'Marketing',
-              icon: Icon(Icons.store_outlined),
-              backgroundColor: Colors.cyan),
+          // BottomNavigationBarItem(
+          ////   label: 'Marketing',
+          //  icon: Icon(Icons.store_outlined),
+          //  backgroundColor: Colors.cyan),
           BottomNavigationBarItem(
               label: 'Profile',
               icon: Icon(Icons.person),
@@ -193,8 +194,13 @@ class _StoreOwnerState extends State<StoreOwner> {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
-        label: const Text("Create"),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CustomerStore()),
+          );
+        },
+        label: const Text("MarketPlace"),
         icon: const Icon(Icons.store),
         backgroundColor: const Color(0xfff17532),
       ),

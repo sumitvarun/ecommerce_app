@@ -8,7 +8,7 @@ class CustomerStore extends StatefulWidget {
 }
 
 class _CustomerStoreState extends State<CustomerStore> {
-  final int _currentIndex = 4;
+  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -39,32 +39,38 @@ class _CustomerStoreState extends State<CustomerStore> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
-          backgroundColor: Colors.blueGrey[700],
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.pinkAccent[400],
-          unselectedItemColor: Colors.grey[300],
+          // backgroundColor: Colors.blueGrey[700],
+          //  type: BottomNavigationBarType.fixed,
+          // selectedItemColor: Colors.pinkAccent[400],
+          // unselectedItemColor: Colors.grey[300],
           items: const [
             BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home),
-            ),
+                label: 'Home',
+                icon: Icon(Icons.home),
+                backgroundColor: Colors.pink),
             BottomNavigationBarItem(
-              label: 'Orders',
-              icon: Icon(Icons.shopping_basket_rounded),
-            ),
+                label: 'Orders',
+                icon: Icon(Icons.shopping_basket_rounded),
+                backgroundColor: Colors.teal),
             BottomNavigationBarItem(
               label: 'Category',
               icon: Icon(Icons.add),
+              backgroundColor: Colors.purple,
             ),
+            // BottomNavigationBarItem(
+            //   label: 'Marketing',
+            //   icon: Icon(Icons.store_outlined),
+            // ),
             BottomNavigationBarItem(
-              label: 'Marketing',
-              icon: Icon(Icons.store_outlined),
-            ),
-            BottomNavigationBarItem(
-              label: 'Profile',
-              icon: Icon(Icons.person),
-            ),
+                label: 'Profile',
+                icon: Icon(Icons.person),
+                backgroundColor: Colors.orange),
           ],
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
         ),
         body: SafeArea(
             child: GridView.count(
