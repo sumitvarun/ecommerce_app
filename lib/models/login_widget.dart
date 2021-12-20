@@ -89,7 +89,20 @@ class loginContainer extends StatelessWidget {
                 icon: const Icon(Icons.arrow_forward),
                 label: const Text("Login"),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 5.5,
+            ),
+            TextButton(
+                onPressed: () {},
+                child: const Text(
+                  "Sign up here",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.blue,
+                  ),
+                ))
           ],
         ),
       ),
