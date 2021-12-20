@@ -21,14 +21,13 @@ class _CustomerStoreState extends State<CustomerStore> {
             onPressed: () => Navigator.of(context).pop()),
         title: Title(
           color: Colors.black,
-          child: const Center(
-            child: Text(
-              'Explore Stores & Product Around You',
-              textAlign: TextAlign.center,
-            ),
+          child: const Text(
+            'Explore Stores & Product Around You',
+            textAlign: TextAlign.center,
           ),
         ),
-        actions: [],
+        centerTitle: true,
+        //actions: [],
         elevation: 20,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(

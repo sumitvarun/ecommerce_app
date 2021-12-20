@@ -19,14 +19,13 @@ class _StoreOwnerState extends State<StoreOwner> {
         foregroundColor: Colors.grey[350],
         title: Title(
           color: Colors.black,
-          child: const Center(
-            child: Text(
-              'Start Creating Your Store',
-              textAlign: TextAlign.center,
-            ),
+          child: const Text(
+            'Start Creating Your Store',
+            textAlign: TextAlign.center,
           ),
         ),
-        actions: [],
+        centerTitle: true,
+        //actions: [],
         elevation: 20,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
