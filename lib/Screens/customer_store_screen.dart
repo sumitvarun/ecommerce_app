@@ -24,6 +24,7 @@ class _CustomerStoreState extends State<CustomerStore> {
           child: const Center(
             child: Text(
               'Explore Stores & Product Around You',
+              textAlign: TextAlign.center,
             ),
           ),
         ),

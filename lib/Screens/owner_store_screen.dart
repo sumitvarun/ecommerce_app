@@ -22,6 +22,7 @@ class _StoreOwnerState extends State<StoreOwner> {
           child: const Center(
             child: Text(
               'Start Creating Your Store',
+              textAlign: TextAlign.center,
             ),
           ),
         ),
