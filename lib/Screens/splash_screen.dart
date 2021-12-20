@@ -59,13 +59,16 @@ class _SplashScreenState extends State<SplashScreen> {
                     //   height: 100,
                     //    width: 100,
                     //  ),
-                    //   Text(
-                    //     'SUMITVARUN',
-                    //    style: GoogleFonts.montserrat(
-                    //        color: Colors.black,
-                    //        fontSize: 15,
-                    //        fontWeight: FontWeight.normal),
-                    //  ),
+                    const SizedBox(
+                      height: 5.0,
+                    ),
+                    Text(
+                      'PRODUCT IO',
+                      style: GoogleFonts.montserrat(
+                          color: Colors.black,
+                          fontSize: 15,
+                          fontWeight: FontWeight.normal),
+                    ),
                   ],
                 ),
               ],
