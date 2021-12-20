@@ -1,5 +1,3 @@
-import 'package:ecommerce_app/models/bottomnavigationbar.dart';
-import 'package:ecommerce_app/models/product_card.dart';
 import 'package:flutter/material.dart';
 
 class StoreOwner extends StatefulWidget {
@@ -37,15 +35,15 @@ class _StoreOwnerState extends State<StoreOwner> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
-        backgroundColor: Colors.blueGrey[700],
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.pinkAccent[400],
-        unselectedItemColor: Colors.grey[300],
+        //backgroundColor: Colors.blueGrey[700],
+        // type: BottomNavigationBarType.fixed,
+        //  selectedItemColor: Colors.pinkAccent[400],
+        //  unselectedItemColor: Colors.grey[300],
         items: const [
           BottomNavigationBarItem(
               label: 'Home',
               icon: Icon(Icons.home),
-              backgroundColor: Colors.green),
+              backgroundColor: Colors.pink),
           BottomNavigationBarItem(
               label: 'Orders',
               icon: Icon(Icons.shopping_basket_rounded),
@@ -61,7 +59,7 @@ class _StoreOwnerState extends State<StoreOwner> {
           BottomNavigationBarItem(
               label: 'Profile',
               icon: Icon(Icons.person),
-              backgroundColor: Colors.blue),
+              backgroundColor: Colors.red),
         ],
         onTap: (index) {
           setState(() {
