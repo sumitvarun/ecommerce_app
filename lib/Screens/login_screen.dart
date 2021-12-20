@@ -31,8 +31,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               automaticallyImplyLeading: false,
-              backgroundColor: const Color(0xffEC407A),
-              foregroundColor: Colors.black,
+              backgroundColor: const Color(0xff0097A7),
+              foregroundColor: Colors.white,
               bottom: const TabBar(
                 indicatorColor: Colors.white,
                 tabs: [
