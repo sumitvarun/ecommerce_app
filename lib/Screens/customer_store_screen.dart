@@ -8,6 +8,7 @@ class CustomerStore extends StatefulWidget {
 }
 
 class _CustomerStoreState extends State<CustomerStore> {
+  final int _currentIndex = 4;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -37,6 +38,7 @@ class _CustomerStoreState extends State<CustomerStore> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
           backgroundColor: Colors.blueGrey[700],
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.pinkAccent[400],

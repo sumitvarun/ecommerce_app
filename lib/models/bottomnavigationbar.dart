@@ -15,25 +15,25 @@ class BottomNavBar extends StatelessWidget {
         unselectedItemColor: Colors.grey[300],
         items: const [
           BottomNavigationBarItem(
-            label: 'Home',
-            icon: Icon(Icons.home),
-          ),
+              label: 'Home',
+              icon: Icon(Icons.home),
+              backgroundColor: Colors.green),
           BottomNavigationBarItem(
-            label: 'Orders',
-            icon: Icon(Icons.shopping_basket_rounded),
-          ),
+              label: 'Orders',
+              icon: Icon(Icons.shopping_basket_rounded),
+              backgroundColor: Colors.purple),
           BottomNavigationBarItem(
-            label: 'Category',
-            icon: Icon(Icons.add),
-          ),
+              label: 'Category',
+              icon: Icon(Icons.add),
+              backgroundColor: Colors.orange),
           BottomNavigationBarItem(
-            label: 'Marketing',
-            icon: Icon(Icons.store_outlined),
-          ),
+              label: 'Marketing',
+              icon: Icon(Icons.store_outlined),
+              backgroundColor: Colors.cyan),
           BottomNavigationBarItem(
-            label: 'Profile',
-            icon: Icon(Icons.person),
-          ),
+              label: 'Profile',
+              icon: Icon(Icons.person),
+              backgroundColor: Colors.blue),
         ],
       ),
     );

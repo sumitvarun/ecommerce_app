@@ -10,6 +10,7 @@ class StoreOwner extends StatefulWidget {
 }
 
 class _StoreOwnerState extends State<StoreOwner> {
+  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +35,40 @@ class _StoreOwnerState extends State<StoreOwner> {
           ),
         ),
       ),
-      bottomNavigationBar: const BottomNavBar(),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        backgroundColor: Colors.blueGrey[700],
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.pinkAccent[400],
+        unselectedItemColor: Colors.grey[300],
+        items: const [
+          BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.home),
+              backgroundColor: Colors.green),
+          BottomNavigationBarItem(
+              label: 'Orders',
+              icon: Icon(Icons.shopping_basket_rounded),
+              backgroundColor: Colors.purple),
+          BottomNavigationBarItem(
+              label: 'Category',
+              icon: Icon(Icons.add),
+              backgroundColor: Colors.orange),
+          BottomNavigationBarItem(
+              label: 'Marketing',
+              icon: Icon(Icons.store_outlined),
+              backgroundColor: Colors.cyan),
+          BottomNavigationBarItem(
+              label: 'Profile',
+              icon: Icon(Icons.person),
+              backgroundColor: Colors.blue),
+        ],
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+      ),
       body: SafeArea(
         child: GridView.count(
           // Create a grid with 2 columns. If you change the scrollDirection to
